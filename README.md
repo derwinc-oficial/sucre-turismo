@@ -127,3 +127,38 @@ El proyecto no contempla las siguientes funcionalidades:
 - Desarrollo de servicios que no estén relacionados directamente con el propósito turístico de la plataforma.
 
 ---
+
+## 1.5 Usuarios
+
+La plataforma **Sucre Turístico** está dirigida principalmente a dos tipos de usuarios: **Turista o Visitante** y **Administrador**.
+
+### 1.5.1 Turista o Visitante
+
+El turista o visitante es el usuario que consulta la plataforma para obtener información sobre la oferta turística disponible en el Golfo de Morrosquillo.
+
+Entre sus principales funcionalidades se encuentran:
+
+- Consultar destinos turísticos.
+- Buscar lugares de interés.
+- Consultar información sobre playas y sitios turísticos.
+- Consultar alojamientos.
+- Consultar restaurantes y opciones gastronómicas.
+- Consultar experiencias y actividades turísticas.
+- Consultar eventos.
+- Filtrar información de acuerdo con sus intereses.
+
+### 1.5.2 Administrador
+
+El administrador es el usuario encargado de gestionar y mantener actualizada la información disponible en la plataforma.
+
+Entre sus principales funcionalidades se encuentran:
+
+- Registrar y gestionar destinos turísticos.
+- Gestionar información de alojamientos.
+- Gestionar restaurantes y establecimientos gastronómicos.
+- Registrar y gestionar experiencias turísticas.
+- Gestionar eventos.
+- Actualizar la información registrada.
+- Gestionar las categorías utilizadas dentro de la plataforma.
+
+---
