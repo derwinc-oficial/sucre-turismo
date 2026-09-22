@@ -94,3 +94,36 @@ Desarrollar una plataforma web Full Stack denominada **Sucre Turístico**, orien
 5. Diseñar la arquitectura del sistema considerando mecanismos de despliegue mediante **Docker**, con el propósito de facilitar la ejecución y organización de los diferentes componentes de la plataforma.
 
 ---
+
+## 1.4 Alcance
+
+### 1.4.1 Alcance incluido
+
+El proyecto **Sucre Turístico** contempla el desarrollo de una plataforma web orientada a la consulta y gestión de información turística del Golfo de Morrosquillo.
+
+Dentro del alcance se incluyen:
+
+- Consulta de información turística mediante una interfaz web.
+- Módulo de información sobre destinos turísticos.
+- Gestión de la información por parte del administrador.
+- Interfaz desarrollada con React.
+- Arquitectura basada en microservicios y API Gateway.
+- Persistencia de datos mediante una base de datos.
+- Consulta de destinos, alojamientos, restaurantes, experiencias y eventos.
+- Implementación de mecanismos de filtrado para facilitar las consultas.
+- Panel de administración para la gestión de la información.
+- Operaciones CRUD para los diferentes módulos administrativos.
+
+### 1.4.2 Alcance excluido
+
+El proyecto no contempla las siguientes funcionalidades:
+
+- Desarrollo de una aplicación móvil nativa.
+- Sistema de reservas de alojamientos o servicios turísticos.
+- Procesamiento de pagos en línea.
+- Gestión de transporte turístico.
+- Facturación o gestión de pagos.
+- Integración con plataformas externas de reservas.
+- Desarrollo de servicios que no estén relacionados directamente con el propósito turístico de la plataforma.
+
+---
