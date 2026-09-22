@@ -162,3 +162,61 @@ Entre sus principales funcionalidades se encuentran:
 - Gestionar las categorías utilizadas dentro de la plataforma.
 
 ---
+
+## 1.6 Mockups
+
+Los mockups de **Sucre Turístico** representan la estructura visual de las principales interfaces de la plataforma, incluyendo las funcionalidades destinadas al turista o visitante y al administrador.
+
+### 1.6.1 Interfaces para el turista o visitante
+
+#### Inicio
+
+![Inicio](docs/mockups/imagen-1.png)
+
+#### Destinos
+
+![Destinos](docs/mockups/imagen-2.png)
+
+#### Detalle del destino
+
+![Detalle del destino](docs/mockups/imagen-3.png)
+
+#### Hoteles y alojamientos
+
+![Hoteles y alojamientos](docs/mockups/imagen-4.png)
+
+#### Gastronomía
+
+![Gastronomía](docs/mockups/imagen-5.png)
+
+#### Experiencias
+
+![Experiencias](docs/mockups/imagen-7.png)
+
+#### Eventos
+
+![Eventos](docs/mockups/imagen-8.png)
+
+### 1.6.2 Interfaces para el administrador
+
+#### Panel de administración
+
+![Panel de administración](docs/mockups/imagen-9.png)
+
+#### Gestión de destinos
+
+![Gestión de destinos](docs/mockups/imagen-10.png)
+
+#### Gestión de alojamientos
+
+![Gestión de alojamientos](docs/mockups/imagen-11.png)
+
+#### Gestión de gastronomía
+
+![Gestión de gastronomía](docs/mockups/imagen-12.png)
+
+#### Gestión de experiencias y eventos
+
+![Gestión de experiencias y eventos](docs/mockups/imagen-13.png)
+
+---
