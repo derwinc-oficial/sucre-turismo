@@ -74,3 +74,23 @@ La utilización de una arquitectura basada en microservicios permite separar las
 Estos componentes se comunicarán a través de un **API Gateway desarrollado en Express**, mientras que **React** será utilizado para la interfaz, de acuerdo con la arquitectura solicitada en la guía.
 
 ---
+
+## 1.3 Objetivos
+
+### 1.3.1 Objetivo general
+
+Desarrollar una plataforma web Full Stack denominada **Sucre Turístico**, orientada a la promoción, consulta y gestión de información turística del Golfo de Morrosquillo, facilitando el acceso de los visitantes a la oferta turística de la región y proporcionando herramientas de administración para la gestión de la información.
+
+### 1.3.2 Objetivos específicos
+
+1. Diseñar una interfaz web intuitiva que permita consultar información relacionada con destinos, alojamientos, gastronomía, experiencias y eventos turísticos.
+
+2. Definir una arquitectura basada en **Frontend, API Gateway y microservicios independientes**, de acuerdo con los requerimientos funcionales del sistema.
+
+3. Integrar la interfaz web con el Backend mediante servicios **REST**, permitiendo el intercambio de información entre los diferentes componentes de la aplicación.
+
+4. Implementar mecanismos de consulta y filtrado que faciliten la búsqueda de información turística de acuerdo con las necesidades e intereses de los visitantes.
+
+5. Diseñar la arquitectura del sistema considerando mecanismos de despliegue mediante **Docker**, con el propósito de facilitar la ejecución y organización de los diferentes componentes de la plataforma.
+
+---
