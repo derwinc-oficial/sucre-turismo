@@ -29,3 +29,48 @@ Frente a esta situación, se propone el desarrollo de Sucre Turístico, una plat
 ### Formulación del problema
 
 **¿Cómo desarrollar una plataforma web que permita centralizar, consultar y gestionar información turística del Golfo de Morrosquillo, facilitando el acceso de los visitantes a destinos, alojamientos, gastronomía, experiencias y eventos?**
+
+---
+
+## 1.2 Justificación
+
+### 1.2.1 Necesidad del proyecto
+
+El desarrollo de **Sucre Turístico** busca facilitar el acceso a información relacionada con la oferta turística del Golfo de Morrosquillo mediante una plataforma web centralizada, dado que actualmente esta información se encuentra dispersa entre redes sociales, páginas no oficiales y recomendaciones informales, sin un canal único que la organice y la mantenga actualizada.
+
+Esta situación dificulta que los turistas encuentren información confiable al momento de planear su visita, y limita la visibilidad de los prestadores de servicios turísticos de la región.
+
+### 1.2.2 Solución propuesta
+
+La plataforma soluciona precisamente esa ausencia de un espacio digital centralizado. Permitirá organizar información sobre:
+
+- Destinos
+- Alojamientos
+- Gastronomía
+- Experiencias
+- Eventos
+
+Los turistas podrán realizar consultas y aplicar filtros de acuerdo con sus intereses.
+
+Para los administradores, el sistema ofrecerá mecanismos para gestionar la información registrada y mantener actualizados los contenidos relacionados con la oferta turística, de modo que ambos perfiles de usuario se benefician directamente de su implementación.
+
+### 1.2.3 Importancia para el turismo
+
+Contar con un canal digital propio tiene, además, un impacto directo sobre el turismo del Golfo de Morrosquillo: aumenta la visibilidad de destinos y prestadores locales, incluyendo aquellos menos conocidos, contribuye a dinamizar la actividad económica asociada al turismo en la región, y fortalece una promoción organizada del territorio frente a la oferta dispersa e informal que existe actualmente.
+
+### 1.2.4 Aporte tecnológico
+
+Desde el punto de vista tecnológico, el proyecto permite aplicar conceptos de:
+
+- Desarrollo Full Stack
+- Interfaces web
+- Servicios REST
+- Persistencia de datos
+- Mecanismos de búsqueda
+- Arquitectura basada en microservicios
+
+La utilización de una arquitectura basada en microservicios permite separar las funcionalidades del sistema —destinos, alojamientos, gastronomía, experiencias y eventos— en componentes independientes, escalables y de fácil mantenimiento.
+
+Estos componentes se comunicarán a través de un **API Gateway desarrollado en Express**, mientras que **React** será utilizado para la interfaz, de acuerdo con la arquitectura solicitada en la guía.
+
+---
