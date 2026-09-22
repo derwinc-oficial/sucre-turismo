@@ -265,3 +265,36 @@ El administrador utiliza la plataforma para gestionar y mantener actualizada la 
 ![Diagrama general de casos de uso](docs/mockups/caso-uso.png)
 
 ---
+
+## 1.8 Arquitectura del sistema
+
+La arquitectura de **Sucre Turístico** está basada en un enfoque de microservicios, permitiendo separar las diferentes funcionalidades del sistema en componentes independientes y facilitar su organización, mantenimiento y escalabilidad.
+
+### 1.8.1 Componentes de la arquitectura
+
+La plataforma está conformada por los siguientes componentes:
+
+- **Usuario:** interactúa con la plataforma mediante la interfaz web.
+- **Frontend:** desarrollado con React, proporciona la interfaz de interacción para los usuarios.
+- **API Gateway:** desarrollado con Express, funciona como punto de entrada para las solicitudes provenientes del Frontend y permite comunicarlas con los diferentes microservicios.
+- **Microservicios:** contienen las funcionalidades independientes relacionadas con los módulos de la plataforma, como destinos, alojamientos, gastronomía, experiencias y eventos.
+- **Base de datos:** permite almacenar y consultar la información gestionada por los servicios de la plataforma.
+
+### 1.8.2 Flujo de comunicación
+
+El flujo general de comunicación del sistema se desarrolla de la siguiente manera:
+
+1. El usuario interactúa con la interfaz web desarrollada en React.
+2. El Frontend realiza solicitudes al API Gateway mediante servicios REST.
+3. El API Gateway recibe y direcciona las solicitudes hacia el microservicio correspondiente.
+4. El microservicio procesa la solicitud y realiza las operaciones necesarias sobre la información.
+5. El microservicio consulta o modifica los datos almacenados en la base de datos.
+6. La respuesta retorna desde el microservicio hacia el API Gateway.
+7. El API Gateway entrega la respuesta al Frontend.
+8. El Frontend presenta la información al usuario.
+
+### 1.8.3 Diagrama de arquitectura
+
+![Arquitectura del sistema](docs/arquitectura/Arquitectura.png)
+
+---
