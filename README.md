@@ -171,52 +171,97 @@ Los mockups de **Sucre Turístico** representan la estructura visual de las prin
 
 #### Inicio
 
-![Inicio](docs/mockups/imagen-1.png)
+![Inicio](docs/mockups/01-Inicio.png)
 
 #### Destinos
 
-![Destinos](docs/mockups/imagen-2.png)
+![Destinos](docs/mockups/02-Destinos.png)
 
 #### Detalle del destino
 
-![Detalle del destino](docs/mockups/imagen-3.png)
+![Detalle del destino](docs/mockups/03-Detalle-destino.png)
 
 #### Hoteles y alojamientos
 
-![Hoteles y alojamientos](docs/mockups/imagen-4.png)
+![Hoteles y alojamientos](docs/mockups/04-Hoteles.png)
 
 #### Gastronomía
 
-![Gastronomía](docs/mockups/imagen-5.png)
+![Gastronomía](docs/mockups/05-comidas.png)
 
 #### Experiencias
 
-![Experiencias](docs/mockups/imagen-7.png)
+![Experiencias](docs/mockups/06-Experiencias.png)
 
 #### Eventos
 
-![Eventos](docs/mockups/imagen-8.png)
+![Eventos](docs/mockups/07-Eventos.png)
 
 ### 1.6.2 Interfaces para el administrador
 
-#### Panel de administración
-
-![Panel de administración](docs/mockups/imagen-9.png)
-
 #### Gestión de destinos
 
-![Gestión de destinos](docs/mockups/imagen-10.png)
+![Gestión de destinos](docs/mockups/08-Gestion-destinos.png)
 
 #### Gestión de alojamientos
 
-![Gestión de alojamientos](docs/mockups/imagen-11.png)
+![Gestión de alojamientos](docs/mockups/09-Gestion-alojamientos.png)
 
 #### Gestión de gastronomía
 
-![Gestión de gastronomía](docs/mockups/imagen-12.png)
+![Gestión de gastronomía](docs/mockups/10-Gestion-gastronomia.png)
 
-#### Gestión de experiencias y eventos
+#### Gestión de experiencias
 
-![Gestión de experiencias y eventos](docs/mockups/imagen-13.png)
+![Gestión de experiencias](docs/mockups/11-Gestion-experiencias.png)
+
+#### Gestión de eventos
+
+![Gestión de eventos](docs/mockups/12-Gestion-eventos.png)
+
+---
+
+## 1.7 Casos de uso
+
+Los casos de uso representan las principales interacciones entre los usuarios y la plataforma **Sucre Turístico**, identificando las funcionalidades disponibles para el turista o visitante y el administrador.
+
+### 1.7.1 Actores
+
+#### Turista / Visitante
+
+El turista o visitante utiliza la plataforma para consultar información relacionada con la oferta turística del Golfo de Morrosquillo.
+
+#### Administrador
+
+El administrador utiliza la plataforma para gestionar y mantener actualizada la información turística registrada en el sistema.
+
+### 1.7.2 Casos de uso del Turista / Visitante
+
+| Caso de uso            | Descripción                                                                        |
+| ---------------------- | ---------------------------------------------------------------------------------- |
+| Consultar destinos     | Permite consultar los destinos turísticos disponibles.                             |
+| Buscar destino         | Permite realizar búsquedas de destinos turísticos.                                 |
+| Consultar alojamiento  | Permite consultar información sobre los alojamientos disponibles.                  |
+| Consultar restaurantes | Permite consultar información sobre restaurantes y establecimientos gastronómicos. |
+| Consultar experiencias | Permite consultar las experiencias y actividades turísticas disponibles.           |
+| Consultar eventos      | Permite consultar información sobre los eventos registrados.                       |
+| Filtrar resultados     | Permite filtrar los resultados de acuerdo con los criterios disponibles.           |
+| Ver detalles           | Permite visualizar información detallada del elemento turístico seleccionado.      |
+
+### 1.7.3 Casos de uso del Administrador
+
+| Caso de uso            | Descripción                                                              |
+| ---------------------- | ------------------------------------------------------------------------ |
+| Iniciar sesión         | Permite al administrador acceder al sistema de gestión.                  |
+| Gestionar destinos     | Permite registrar, consultar, actualizar y eliminar destinos turísticos. |
+| Gestionar alojamientos | Permite administrar la información de los alojamientos registrados.      |
+| Gestionar restaurantes | Permite administrar la información de los restaurantes registrados.      |
+| Gestionar experiencias | Permite administrar las experiencias turísticas registradas.             |
+| Gestionar eventos      | Permite administrar la información de los eventos registrados.           |
+| Gestionar categorías   | Permite administrar las categorías utilizadas dentro de la plataforma.   |
+
+### 1.7.4 Diagrama general de casos de uso
+
+![Diagrama general de casos de uso](docs/mockups/caso-uso.png)
 
 ---
