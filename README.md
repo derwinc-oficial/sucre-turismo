@@ -298,3 +298,205 @@ El flujo general de comunicación del sistema se desarrolla de la siguiente mane
 ![Arquitectura del sistema](docs/arquitectura/Arquitectura.png)
 
 ---
+
+## 1.9 Microservicios funcionales
+
+La plataforma **Sucre Turístico** implementa una arquitectura basada en microservicios, separando las principales funcionalidades del sistema en servicios independientes.
+
+Actualmente se encuentran implementados y funcionales los siguientes tres microservicios:
+
+### 1.9.1 Destinos
+
+**Servicio:** `destinos-service`
+
+Este microservicio administra la información relacionada con los destinos turísticos del Golfo de Morrosquillo.
+
+Sus operaciones principales son:
+
+- Crear destinos.
+- Consultar todos los destinos.
+- Consultar un destino específico.
+- Actualizar destinos.
+- Eliminar destinos.
+
+**Puerto:** `3001`
+
+### 1.9.2 Alojamientos
+
+**Servicio:** `alojamiento-service`
+
+Este microservicio administra la información relacionada con hoteles y otros alojamientos turísticos.
+
+Sus operaciones principales son:
+
+- Crear alojamientos.
+- Consultar todos los alojamientos.
+- Consultar un alojamiento específico.
+- Actualizar alojamientos.
+- Eliminar alojamientos.
+
+**Puerto:** `3002`
+
+### 1.9.3 Gastronomía
+
+**Servicio:** `gastronomia-service`
+
+Este microservicio administra la información relacionada con restaurantes y establecimientos gastronómicos.
+
+Sus operaciones principales son:
+
+- Crear establecimientos gastronómicos.
+- Consultar establecimientos.
+- Consultar un establecimiento específico.
+- Actualizar establecimientos.
+- Eliminar establecimientos.
+
+**Puerto:** `3003`
+
+### 1.9.4 Organización de los servicios
+
+Cada microservicio cuenta con su propio código fuente y es responsable de una funcionalidad específica de la plataforma.
+
+La estructura actual del proyecto contempla:
+
+```text
+sucre-turismo/
+├── api-gateway/
+├── destinos-service/
+├── alojamiento-service/
+├── gastronomia-service/
+├── frontend/
+├── docs/
+└── README.md
+```
+
+---
+
+## 1.10 Implementación funcional de los microservicios
+
+Los tres microservicios implementados cuentan con servidor Express, endpoints REST, operaciones CRUD, conexión a PostgreSQL, validaciones básicas y manejo de respuestas HTTP.
+
+### 1.10.1 Destinos
+
+**Base de datos:** `sucre_destinos`
+
+**Tabla:** `destinos`
+
+| Método | Endpoint            | Descripción                 |
+| ------ | ------------------- | --------------------------- |
+| GET    | `/api/destinos`     | Consulta todos los destinos |
+| GET    | `/api/destinos/:id` | Consulta un destino por ID  |
+| POST   | `/api/destinos`     | Crea un destino             |
+| PUT    | `/api/destinos/:id` | Actualiza un destino        |
+| DELETE | `/api/destinos/:id` | Elimina un destino          |
+
+**Puerto:** `3001`
+
+### 1.10.2 Alojamientos
+
+**Base de datos:** `sucre_alojamientos`
+
+**Tabla:** `alojamientos`
+
+| Método | Endpoint                | Descripción                     |
+| ------ | ----------------------- | ------------------------------- |
+| GET    | `/api/alojamientos`     | Consulta todos los alojamientos |
+| GET    | `/api/alojamientos/:id` | Consulta un alojamiento por ID  |
+| POST   | `/api/alojamientos`     | Crea un alojamiento             |
+| PUT    | `/api/alojamientos/:id` | Actualiza un alojamiento        |
+| DELETE | `/api/alojamientos/:id` | Elimina un alojamiento          |
+
+**Puerto:** `3002`
+
+### 1.10.3 Gastronomía
+
+**Base de datos:** `sucre_gastronomia`
+
+**Tabla:** `gastronomia`
+
+| Método | Endpoint               | Descripción                         |
+| ------ | ---------------------- | ----------------------------------- |
+| GET    | `/api/gastronomia`     | Consulta todos los establecimientos |
+| GET    | `/api/gastronomia/:id` | Consulta un establecimiento por ID  |
+| POST   | `/api/gastronomia`     | Crea un establecimiento             |
+| PUT    | `/api/gastronomia/:id` | Actualiza un establecimiento        |
+| DELETE | `/api/gastronomia/:id` | Elimina un establecimiento          |
+
+**Puerto:** `3003`
+
+### 1.10.4 API Gateway
+
+El proyecto cuenta con un **API Gateway desarrollado con Express**, que centraliza el acceso a los tres microservicios.
+
+**Puerto:** `4000`
+
+| Ruta del Gateway    | Servicio              |
+| ------------------- | --------------------- |
+| `/api/destinos`     | `destinos-service`    |
+| `/api/alojamientos` | `alojamiento-service` |
+| `/api/gastronomia`  | `gastronomia-service` |
+
+El API Gateway está preparado como punto de entrada para que el Frontend se comunique con los servicios del Backend.
+
+### 1.10.5 Respuestas HTTP y manejo de errores
+
+Los servicios implementan respuestas HTTP según el resultado de cada operación:
+
+- `200 OK`: consulta, actualización o eliminación realizada correctamente.
+- `201 Created`: registro creado correctamente.
+- `400 Bad Request`: datos inválidos o campos obligatorios faltantes.
+- `404 Not Found`: recurso no encontrado.
+- `500 Internal Server Error`: error durante el procesamiento de la solicitud o acceso a la base de datos.
+
+También se realizan validaciones básicas de los identificadores y de los campos obligatorios antes de ejecutar las operaciones sobre la base de datos.
+
+### 1.10.6 Persistencia de datos
+
+Los microservicios utilizan PostgreSQL como sistema de gestión de bases de datos.
+
+Se dispone de una base de datos independiente para cada servicio:
+
+```text
+sucre_destinos
+sucre_alojamientos
+sucre_gastronomia
+```
+
+### 1.10.7 Pruebas funcionales
+
+Se realizaron pruebas funcionales de las operaciones CRUD de los tres microservicios, verificando:
+
+- Creación de registros mediante `POST`.
+- Consulta general mediante `GET`.
+- Consulta individual mediante `GET /:id`.
+- Actualización mediante `PUT`.
+- Eliminación mediante `DELETE`.
+- Validación de identificadores.
+- Respuestas para recursos inexistentes.
+- Conexión y persistencia mediante PostgreSQL.
+- Acceso a los servicios mediante el API Gateway.
+
+Las pruebas permitieron verificar el funcionamiento de los endpoints REST y la comunicación entre el API Gateway y los microservicios.
+
+---
+
+## 1.11 Entregables
+
+El repositorio contiene los elementos desarrollados para el proyecto **Sucre Turístico**:
+
+- Planteamiento del problema.
+- Justificación.
+- Objetivo general y objetivos específicos.
+- Alcance.
+- Usuarios.
+- Mockups de las interfaces.
+- Casos de uso y diagrama UML.
+- Diagrama de arquitectura.
+- API Gateway.
+- Microservicio de destinos.
+- Microservicio de alojamientos.
+- Microservicio de gastronomía.
+- Bases de datos PostgreSQL.
+- Evidencias de pruebas funcionales.
+- Frontend desarrollado con React.
+- README con instrucciones generales del proyecto.

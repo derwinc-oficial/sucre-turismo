@@ -1,0 +1,15 @@
+{
+  "name": "sucre-turismo",
+  "version": "1.0.0",
+  "description": "Plataforma web turística del Golfo de Morrosquillo",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm --prefix api-gateway start\" \"npm --prefix destinos-service start\" \"npm --prefix alojamiento-service start\" \"npm --prefix gastronomia-service start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
